@@ -9,7 +9,7 @@ module.exports = {
     node: {
       __dirname: true
     },
-    entry: ["server", "server.socket"],
+    entry: ["server.socket"],
     resolve: {
         root: [ path.resolve("./src") ],
         extensions: ["", ".js"]
