@@ -1,6 +1,6 @@
 {
   "name": "keyboard-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "鍵盤發電機",
   "scripts": {
     "server": "node server.js",
@@ -9,7 +9,7 @@
     "watch-server": "webpack -w --config webpack.config.server.js",
     "build": "cross-env NODE_ENV=production npm run build-client && npm run build-server",
     "build-client": "webpack --colors --optimize-minimize --config webpack.config.client.js",
-    "build-server": "webpack --colors --optimize-minimize --config webpack.config.server.js"
+    "build-server": "webpack --colors --config webpack.config.server.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
   "devDependencies": {
     "cross-env": "^1.0.8",
     "json-loader": "^0.5.4",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "webpack-node-externals": "^1.5.4"
   }
 }
