@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "鍵盤發電機",
   "scripts": {
-    "server": "node server.js",
+    "start": "node server.js",
     "watch": "cross-env NODE_ENV=development npm run watch-client & npm run watch-server & nodemon server.js",
     "watch-client": "webpack -w --config webpack.config.client.js",
     "watch-server": "webpack -w --config webpack.config.server.js",

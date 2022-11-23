@@ -1,5 +1,4 @@
 import {
-  hostname,
   maintaining,
   syncVisitor,
   syncBulb,
@@ -8,7 +7,7 @@ import {
 
 import io from 'socket.io-client';
 
-const socket = io.connect("http://" + hostname, {
+const socket = io.connect(window.location.host, {
   "force new connection": true
 });
 

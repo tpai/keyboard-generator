@@ -1,9 +1,8 @@
 import server from 'server';
 import { Per, Users } from 'server.data';
 import http from 'server.http';
-import socketIO from 'socket.io';
 
-const io = socketIO.listen(http, { log: false });
+const io = require('socket.io')(http);
 const per = Per();
 const users = Users();
 

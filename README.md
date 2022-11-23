@@ -15,25 +15,26 @@
 
 **安裝相依套件**
 
-```
+```sh
 npm i
 ```
 
 **開發**
 
-```
+```sh
 npm i -g nodemon
 npm run watch
 ```
 
 **編譯**
 
-```
+```sh
 npm run build
 ```
 
 **啟動**
 
-```
-npm run server // http://localhost:8000
+```sh
+# listening on port 8080
+npm run server
 ```
